@@ -1,0 +1,132 @@
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px; /* Add padding for spacing and adjust as needed */
+    background-color: #f2f2f2;
+    z-index: 2;
+}
+
+body {
+    /*background-color: rgb(147, 139, 161);*/
+    background: rgb(253, 248, 227)
+}
+
+.icon {
+    width: 40px; /* Adjust the width and height to make the icon smaller */
+    height: 40px;
+    position: absolute;
+    right: 0%;
+}
+
+/* .image-with-text {
+    margin-left: 0px;
+    width: 200px;
+    height: 300px;
+    margin-top: 75px;
+    margin-right: 100px;
+    border-style: solid;
+} */
+.image-with-text {
+    display: flex;
+    align-items: right;
+    border-color: black;
+    border-style: solid;
+    padding: 5px;
+    height: 400px;
+  }
+#self-image {
+    margin-right: 10px;
+    width: 325px;
+    height: 380px;
+    object-fit: cover;
+  }
+  
+
+.personal-description {
+    margin:0;
+    /* padding: 5%; */
+    /* border-color: black;
+    border-style: solid; */
+    font-family:'Times New Roman', Times, serif;
+    font-size: large;
+}
+.personal-description::first-line {
+    font-size: 50px;
+    font-weight: bold;
+}
+
+.button-container {
+    margin-top: 50px;
+    display: flex;
+    justify-content: center;
+    /* padding-bottom: 10px; */
+    margin-bottom: -100px; /* Adjust this value to move the buttons up */
+}
+
+.btn {
+    width: 270px;
+    height: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+.btn:hover{
+    background-color: black;
+    color: white;
+}
+
+.social-link {
+    font-size: 30px;
+    text-decoration: none;
+    margin-right: 15px; /* Space between icons */
+    display: inline-block;
+}
+
+.social-link i {
+    display: block; /* Ensure the icon is a block element */
+    color: inherit; /* Inherit color from parent anchor */
+    transition: color 0.3s; /* Smooth transition for hover effect */
+}
+
+.social-link.instagram {
+    color: #E4405F; /* Instagram's brand color */
+}
+
+.social-link.linkedin {
+    color: #0A66C2; /* LinkedIn's brand color */
+}
+
+.social-link.github {
+    color: #333; /* GitHub's brand color */
+}
+
+.social-link.instagram:hover {
+    color: #C13584; /* Instagram hover color */
+}
+
+.social-link.linkedin:hover {
+    color: #004182; /* LinkedIn hover color */
+}
+
+.social-link.github:hover {
+    color: #6e5494; /* GitHub hover color */
+}
+
+.name {
+    font-size: larger;
+    font-family:'Courier New', Courier, monospace;
+    font-weight: bold;
+}
+
+.nav-container {
+    margin-left: 100px;
+    margin-right: 100px;
+    margin-top: 100px;
+    display: flex;
+    justify-content: center;
+}

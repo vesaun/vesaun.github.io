@@ -1,0 +1,35 @@
+body {
+  background: rgb(253, 248, 227)
+}
+
+.button-container {
+  margin-top: 50px;
+  display: flex;
+  justify-content: center;
+  /* padding-bottom: 10px; */
+  margin-bottom: -100px; /* Adjust this value to move the buttons up */
+}
+
+.btn {
+  width: 270px;
+  height: 50px;
+  padding-right: 25px;
+  padding-left: 25px;
+  font-size: 15px;
+  font-family:Arial, Helvetica, sans-serif;
+  font-weight: bold;
+  
+}
+
+.btn:hover{
+  background-color: black;
+  color: white;
+}
+
+.line {
+  width: 1200px;
+  height: 1px;
+  border-bottom: 1px solid black;
+  position: absolute;
+  margin-top: 50px;
+}
