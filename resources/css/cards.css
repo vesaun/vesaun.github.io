@@ -39,72 +39,7 @@ body {
     width: 200px;
     height: 250px;
 }
-/* 
-.images-container {
-    display: flex;
-    position: relative;
-    margin-left: 1000px;
-    margin-top: -250px;
-    padding-right: 50px;
-    flex-direction: column; 
-    justify-content: flex-start;
-    align-items: right;
-    max-width: 1000px;
-}*/
 
-.img-container img {
-    width: 100%; 
-    height: auto;
-    margin-bottom: 5px; 
-} 
-
-.vids {
-    position: relative;
-    margin-bottom: 50px;
-    margin-right: 800px;
-}
-
-#right {
-    position: relative;
-    margin-left: 140px;
-}
-
-#left {
-    position: relative;
-    margin-bottom: 740px;
-    margin-right: 750px;
-}
-
-h1 {
-    margin:0;
-    margin-top: 0px;
-    /* padding: 5%; */
-    /* border-color: black;
-    border-style: solid; */
-    font-family:'Times New Roman', Times, serif;
-    font-size: 35px;
-    color: white;
-}
-
-h2 {
-    font-family:Arial, Helvetica, sans-serif;
-    font-size: 25px;
-    color: rgb(222, 216, 216);
-    max-width: 600px;
-    word-wrap: break-word;
-}
-
-
-.btn {
-    width: 270px;
-    height: 50px;
-    padding-right: 25px;
-    padding-left: 25px;
-    font-size: 15px;
-    font-family:Arial, Helvetica, sans-serif;
-    font-weight: bold;
-    
-}
 
 .btn:hover{
     background-color: black;
@@ -117,4 +52,54 @@ h2 {
     border-bottom: 1px solid black;
     position: absolute;
     margin-top: 50px;
+}
+
+.btn {
+    width: 270px;
+    height: 50px;
+    padding-right: 25px;
+    padding-left: 25px;
+    font-size: 15px;
+    font-family:Arial, Helvetica, sans-serif;
+    font-weight: bold;
+    
+}
+
+
+
+.hobby-container {
+    width: 80%;
+    margin: 150px auto;
+}
+
+.hobby {
+    background-color: #f1f1f1;
+    border: 1px solid #ccc;
+    margin: 10px 0;
+    cursor: pointer;
+    padding: 10px;
+    transition: background-color 0.3s;
+}
+
+.hobby:hover {
+    background-color: #ddd;
+}
+
+.content {
+    display: none;
+    padding: 10px;
+    background-color: #fafafa;
+}
+
+.content img {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+}
+.content video {
+    max-width: 50%;
+    height: auto;
+    display: block;
+    margin-top: 10px;
 }

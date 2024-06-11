@@ -19,29 +19,49 @@
     <div class="line"></div>
   </div>
 
-  <div class="hobbies-bg">
-    <div class="left-aligned">
-        <h1>Hiking/Climbing</h1>
-        <div class="heading-wrapper">
-          <h2>From a very young age I always had some extraordinary attraction to the mountains. Growing up in Colorado, my family 
-            and I would always make trips to the mountains on weekends, exploring lakes and breathing the fresh alpine air. It was exhilirating
-            crawling the steep dirt on all fours as a young kid. Eventually, my friends and I have completed (as of 05/57/24) 25 of Colorado's
-            56 fourteeners and are aiming to finish them by our college graduation. If you're reading this I have probably attached this link to 
-            some job application and I'm probably interested in working with you/at your company but feel free to contact me about mountaineering!
+  <div class="hobby-container">
+    <div class="hobby" onclick="toggleContent('content1')">
+        <h3>Piano</h3>
+        <div id="content1" class="content">
+            <p>I have played the piano for 15 years and have a special love for the romantic era of classical piano.
+              My favorite composers are Chopin, Liszt and Debussy to listen and play. Since 2023, my projects have been Chopin's Ballade No.1,
+              Liszt's Hungarian Rhapsody No.2 and Mephisto Waltz No.1; I have finished all but the Rhapsody.
+            </p>
+            <a href="https://www.youtube.com/watch?v=DwxyHenaU54" target="_blank">Ballade No.1 in G Minor - Chopin</a>
 
-          </h2>
-        </div>
-        <div class="img-container">
-          <img id="right" src="../resources/img/kelso_ride.jpeg" alt="Image 1">
-          <div class="vids">
-            <video width="180" height="360" controls>
-              <source src="../resources/img/boulderV7.MOV" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-          </div>
         </div>
     </div>
-  </div>
+    <div class="hobby" onclick="toggleContent('content2')">
+        <h3>14ers (Hiking)</h3>
+        <div id="content2" class="content">
+            <p>Some friends and I decided to start hiking 14ers when COVID-19 had the world in a shutdown. We started with the "easy"
+              14ers around the front range since none of us could drive and our parents would have to take us there and back (thank you mom and dad).
+              Eventually, we grew to get our license and with us growing so did our ambition to climb more with our hands than our feet.
+              We started entering Class 3/4 territory which have included Long's Peak (3), Crestone Peak (3), Mt. Neva (4) and the second
+              flatiron (4-5). I have also picked bouldering the past year or so and have gotten a couple V7's since!
+            </p>
+            <img src="../resources/img/kelso_ride.jpeg" alt="Kelso image">
+            <video src="../resources/img/crestone_summit.MOV" controls></video>
+            <video src="../resources/img/boulderV7.MOV" controls></video>
+
+        </div>
+    </div>
+    <div class="hobby" onclick="toggleContent('content3')">
+        <h3>Track and Field / Running</h3>
+        <div id="content3" class="content">
+            <p>In high school I was extremely invested in my track and field career and at the time thought that'd be my reasoning
+              for college. I was a triple/long jumper but would do some relays here and there. I used to hold the school record for the Long
+              jump until recently my brother took it. My relay team and I for the 4x100m and 4x200m races are still the school-record holders. 
+              I had several offers including UCCS, USAFA Academy, CMU (Co Mesa) and other out of state schools but never accepted any.
+              Nowadays I have been following the seemingly trendy-hobby of running and ran my first half-marathon in Steamboat Springs on June 2nd!
+            </p>
+            <img src="../resources/img/half_marathon.JPG" alt="Hobby 3 image">
+            <video src="../resources/img/triple_jump.MOV" controls></video>
+
+        </div>
+    </div>
+</div>
+<script src="script.js"></script>
   
 
 </body>
