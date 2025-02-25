@@ -6,7 +6,7 @@
 
 body {
     font-family: 'Courier New', monospace;
-    font-size: 25px;
+    font-size: 20px;
     margin: 0;
     padding: 0;
     background: linear-gradient(135deg, #ffdfba, #ff6f61);
@@ -88,22 +88,108 @@ body {
     max-width: 1200px;
     margin: 0 auto;
   }
-  
-  /* Projects Grid */
+
   .projects-grid {
     display: grid;
     grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
     gap: 20px;
-  }
-  
-  .project-card {
+}
+
+/* Project Card */
+.project-card {
+    display: flex;
+    flex-direction: column;
     background: #fff;
     border: 2px solid #ff6f61;
     border-radius: 15px;
     padding: 20px;
     transition: transform 0.3s ease, box-shadow 0.3s ease;
     position: relative;
+    height: 100%; /* Ensure all cards take full height */
+}
+
+/* Card Content */
+.project-card h3,
+.project-card p {
+    margin: 0 0 10px 0; /* Add spacing between elements */
+}
+
+/* Button Container */
+.project-card .btn-container {
+    margin-top: auto; /* Push the button to the bottom */
+    text-align: center; /* Center the button */
+}
+
+/* Button Styles */
+.project-card .btn {
+    display: inline-block;
+    background: #ff6f61;
+    color: #fff;
+    padding: 10px 20px;
+    border-radius: 50px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    width: 100%; /* Make the button full width */
+    box-sizing: border-box; /* Ensure padding is included in width */
+}
+
+.project-card .btn:hover {
+    background: #2c3e50;
+}
+  
+  /* Projects Grid */
+  /* .projects-grid {
+
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  
+
+    align-items: stretch;
+  } 
+
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    background: #fff;
+    border: 2px solid #ff6f61;
+    border-radius: 15px;
+    padding-bottom: 45px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
   }
+  
+  .project-card .btn {
+    position: absolute;
+    bottom: 3px;
+    left: 50%;
+    transform: translateX(-50%);
+  
+    background-color: #ff6f61;
+    color: #fff;
+    border-radius: 50px;
+    padding: 10px 20px;
+    text-decoration: none;
+    transition: background 0.3s ease;
+    cursor: pointer;
+    border: none;
+  } */
+  
+  /* .projects-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+  }
+  
+  .project-card {
+    display: flex;
+    flex-direction: column;
+    background: #fff;
+    border: 2px solid #ff6f61;
+    border-radius: 15px;
+    padding: 20px;
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    position: relative;
+  } */
   
   .project-card:hover {
     transform: translateY(-5px);
@@ -113,6 +199,16 @@ body {
   .project-card:hover:before {
     opacity: 1;
   }
+
+  /* .proj-btn {
+    bottom: 3px;
+    padding: 10px 15px;
+    background-color: #007bff;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    text-align: center; */
   
   /* Button Styles */
   .btn {
