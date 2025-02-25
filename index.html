@@ -66,6 +66,28 @@
     #dynamic-text {
             opacity: 1;
             transition: opacity 1s ease-in-out;
+    }
+
+    @media (max-width: 768px) {
+            section {
+                height: auto; /* Allow content to adjust naturally */
+                padding: 40px 20px;
+            }
+
+            .home-container {
+                flex-direction: column; /* Stack image above text */
+                text-align: center; /* Center everything */
+                gap: 20px;
+            }
+
+            .profile-pic {
+                width: 120px; /* Slightly smaller on mobile */
+                height: 120px;
+            }
+
+            .home-text {
+                font-size: 20px; /* Reduce font size for better fit */
+            }
         }
   </style>
 </head>
